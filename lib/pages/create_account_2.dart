@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insurance_app/services/input_box.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CreateAccount2 extends StatefulWidget {
   const CreateAccount2({Key? key}) : super(key: key);
@@ -12,23 +13,25 @@ class _CreateAccount2State extends State<CreateAccount2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body: Center(
         child: Column(
           children: [
-            const SizedBox(height: 75.0,),
-            const Text('Create Account',
+            SizedBox(height: 98.h,),
+            Text('Create Account',
               style: TextStyle(
               fontFamily: 'Comfortaa',
-              fontSize: 36.0,
+              fontSize: 36.sp,
             ),),
+            SizedBox(height: 40.h,),
             InputBox(text: 'User Name', isObs: false),
-            const SizedBox(height: 16.0,),
+            SizedBox(height: 16.h,),
             InputBox(text: 'Email', isObs: false,),
-            const SizedBox(height: 16.0,),
+            SizedBox(height: 16.h,),
             InputBox(text: 'Password', isObs: true),
-            SizedBox(height: 16.0,),
-            Padding(
-              padding: const EdgeInsets.all(13.0),
+            SizedBox(height: 45.h,),
+            SizedBox(
+              height: 50.h,
+              width: 150.w,
               child: FlatButton(
                 onPressed: (){
                   Navigator.pushNamedAndRemoveUntil(context, '/welcome', (route) => false);
@@ -40,8 +43,6 @@ class _CreateAccount2State extends State<CreateAccount2> {
                       color: Colors.white
                   ),),
                 color: Color.fromARGB(255, 11, 126, 193),
-                height: 50.0,
-                minWidth: 150.0,
               ),
             )
 

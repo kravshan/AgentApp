@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:insurance_app/services/input_box.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:insurance_app/services/topic_and_button.dart';
 
 class Accept2 extends StatefulWidget {
   const Accept2({Key? key}) : super(key: key);
@@ -17,51 +18,11 @@ class _Accept2State extends State<Accept2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 239, 250, 252),
-      appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 239, 250, 252),
-        elevation: 0.0,
-        foregroundColor: Colors.black,
-        title: const Text('Case xxx',
-        style: TextStyle(
-          fontSize: 36.0,
-          fontFamily: 'Comfortaa',
-        ),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 8.0, 12.0, 8.0),
-            child: RaisedButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/notification_1');
-              },
-              padding: const EdgeInsets.all(0),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-              child: Ink(
-                width: 90,
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [Color.fromARGB(255, 255, 0, 214), Color.fromARGB(255, 255, 77, 0)]
-                  ),
-                  borderRadius: BorderRadius.circular(30.0)
-                ),
-                child: Container(
-                  constraints: const BoxConstraints(minWidth: 50.0, minHeight: 31.0),
-                  alignment: Alignment.center,
-                  child: const Text('1',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-            ),
-          )
-        ],
-      ),
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
+            TopicAndButton(text: 'Case XXX',),
             InputBox(text: 'Policy Number', isObs: false),
             InputBox(text: 'Vehicle Number', isObs: false),
             InputBox(text: 'Driver Name', isObs: false),

@@ -1,10 +1,12 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class InputBox extends StatefulWidget {
   final String text;
-  final bool isObs;
+  final bool isObs ;
 
-  InputBox({required this.text, required this.isObs});
+  InputBox({required this.text,  required this.isObs});
 
   @override
   _InputBoxState createState() => _InputBoxState(text, isObs);
@@ -21,21 +23,21 @@ class _InputBoxState extends State<InputBox> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(18.0, 8.0, 8.0, 8.0),
-          child: Text(text,
-            style: const TextStyle(
-                fontFamily: 'Comfortaa',
-                fontSize: 18.0
-            ),
+        Text(text,
+          style: TextStyle(
+              fontFamily: 'Comfortaa',
+              fontSize: 18.sp,
+            fontWeight: FontWeight.w400
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 8.0),
+        SizedBox(height: 17.h,),
+        SizedBox(
+          height: 50.h,
+          width: 300.w,
           child: TextField(
             obscureText: isObs,
               decoration: const InputDecoration(
-                  fillColor: Colors.white,
+                  fillColor: Color.fromARGB(255, 196, 247, 251),
                   filled: true,
                   border: OutlineInputBorder()
               ),

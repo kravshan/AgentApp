@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:insurance_app/services/topic_and_button.dart';
 import 'profile_pic.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -9,42 +12,57 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      //SizedBox(height: 10),
-      children: [
-        SizedBox(
-          height: 40,
-          child: Text(
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(height: 85.h,),
+          TopicAndButton(text: 'Welcome'),
+          SizedBox(height: 40.h,),
+          Text(
             'User Name',
             style: TextStyle(
               fontFamily: 'Comfortaa',
-              fontSize: 18,
+              fontSize: 18.sp,
+              fontWeight: FontWeight.w400
             ),
           ),
-        ),
-        ProfilePic(),
-        SizedBox(height: 30),
-        Profile(
-          text: 'REVIEW',
-          press: () async {
-            dynamic result =
-                await Navigator.popAndPushNamed(context, '/review');
-          },
-        ),
-        Profile(
-          text: 'CONTACT REGIONAL OFFICE',
-          press: () async {
-            dynamic result =
-                await Navigator.popAndPushNamed(context, '/contact');
-          },
-        ),
-        Profile(
-          text: 'SIGN OUT',
-          press: () {
-            Navigator.pushNamed(context, '/');
-          },
-        ),
-      ],
+          SizedBox(height: 27.h,),
+          ProfilePic(),
+          SizedBox(height: 37.h),
+          SizedBox(
+            height: 50.h,
+            width: 150.w,
+            child: Profile(
+              text: 'REVIEW',
+              press: () {
+                    Navigator.popAndPushNamed(context, '/review');
+              },
+            ),
+          ),
+          SizedBox(height: 20.h,),
+          SizedBox(
+            height: 50.h,
+            width: 300.w,
+            child: Profile(
+              text: 'CONTACT REGIONAL OFFICE',
+              press: () {
+                    Navigator.popAndPushNamed(context, '/contact');
+              },
+            ),
+          ),
+          SizedBox(height: 20.h,),
+          SizedBox(
+            height: 50.h,
+            width: 150.w,
+            child: Profile(
+              text: 'SIGN OUT',
+              press: () {
+                Navigator.pushNamed(context, '/');
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -61,27 +79,17 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      child: FlatButton(
-        padding: EdgeInsets.all(20),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-        color: Colors.black,
-        onPressed: press,
-        child: Row(
-          children: [
-            Expanded(
-              child: Text(
-                text,
-                style: new TextStyle(
-                  fontFamily: 'Roboto',
-                  fontSize: 15,
-                  color: Colors.white,
-                  //textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-          ],
+    return FlatButton(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
+      color: const Color.fromARGB(255, 11, 126, 193),
+      onPressed: press,
+      child: Text(
+        text,
+        style: TextStyle(
+          fontFamily: 'Roboto',
+          fontSize: 13.sp,
+          color: Colors.white,
+          fontWeight: FontWeight.w900
         ),
       ),
     );
