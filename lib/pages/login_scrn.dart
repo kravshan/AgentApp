@@ -64,7 +64,7 @@ class _LoginScrnState extends State<LoginScrn> {
                     fontWeight: FontWeight.w900
                   ),
                 ),
-                color: const Color.fromARGB(255, 11, 126, 193),
+                color: const Color.fromARGB(255, 160, 213, 244),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             )

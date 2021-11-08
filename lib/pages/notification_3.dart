@@ -52,7 +52,8 @@ class _Notification_3State extends State<Notification_3> {
                 fontWeight: FontWeight.w900,
                 color: Colors.white
               ),),
-              color: Color.fromARGB(255, 73, 213, 79),
+              color: const Color.fromARGB(255, 73, 213, 79),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               elevation: 5.h,
             )
           ),
@@ -71,7 +72,8 @@ class _Notification_3State extends State<Notification_3> {
                     fontWeight: FontWeight.w900,
                     color: Colors.white
                 ),),
-              color: Color.fromARGB(255, 11, 126, 193),
+              color: const Color.fromARGB(255, 11, 126, 193),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
             ),
           ),
           SizedBox(height: 34.h,),
@@ -87,7 +89,8 @@ class _Notification_3State extends State<Notification_3> {
                     fontWeight: FontWeight.w900,
                     color: Colors.white
                 ),),
-              color: Color.fromARGB(255, 160, 213, 244),
+              color: const Color.fromARGB(255, 160, 213, 244),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
             ),
           ),
           SizedBox(height: 34.h,),
@@ -103,7 +106,8 @@ class _Notification_3State extends State<Notification_3> {
                     fontWeight: FontWeight.w900,
                     color: Colors.white
                 ),),
-              color: Color.fromARGB(255, 224, 20, 20),
+              color: const Color.fromARGB(255, 224, 20, 20),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
             ),
           ),
           SizedBox(height: 30.h,),

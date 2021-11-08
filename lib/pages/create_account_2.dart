@@ -43,6 +43,7 @@ class _CreateAccount2State extends State<CreateAccount2> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             )
 

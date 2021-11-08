@@ -36,6 +36,25 @@ class _Notification_1State extends State<Notification_1> {
             width: 300.w,
             child: FlatButton(
               onPressed: (){
+                Navigator.pushNamed(context, '/contact');
+              },
+              child: Text('CONTACT REGIONAL OFFICE',
+                style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white
+                ),),
+              color: const Color.fromARGB(255, 11, 126, 193),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
+            ),
+          ),
+          SizedBox(height: 20.h,),
+          SizedBox(
+            height: 50.h,
+            width: 300.w,
+            child: FlatButton(
+              onPressed: (){
                 Navigator.pop(context);
               },
               child: Text('BACK',

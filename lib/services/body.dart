@@ -55,11 +55,19 @@ class _BodyState extends State<Body> {
           SizedBox(
             height: 50.h,
             width: 150.w,
-            child: Profile(
-              text: 'SIGN OUT',
-              press: () {
-                Navigator.pushNamed(context, '/');
+            child: FlatButton(
+              onPressed: (){
+                Navigator.pushReplacementNamed(context, '/');
               },
+              child: Text('SIGN OUT',
+                style: TextStyle(
+                    fontFamily: 'Roboto',
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white
+                ),),
+              color: Color.fromARGB(255, 160, 213, 244),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
             ),
           ),
         ],
