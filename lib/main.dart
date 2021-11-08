@@ -11,6 +11,8 @@ import 'package:insurance_app/pages/welcome.dart';
 import 'package:insurance_app/pages/review.dart';
 import 'package:insurance_app/pages/contact.dart';
 import 'package:insurance_app/pages/notification_2.dart';
+import 'package:insurance_app/pages/map.dart';
+import 'package:insurance_app/pages/notification_3.dart';
 
 void main() {
   runApp(ScreenUtilInit(
@@ -29,6 +31,8 @@ void main() {
         '/review': (context) => Review(),
         '/contact': (context) => Contact(),
         '/notification_2': (context) => Notification_2(),
+        '/map': (context) => Map(),
+        '/notification_3': (context) => Notification_3()
       },
     ),
   )

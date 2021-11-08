@@ -19,7 +19,7 @@ class _TopicAndButtonState extends State<TopicAndButton> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        SizedBox(width: 135.w,),
+        SizedBox(width: 120.w,),
         Text(
           text,
           style: TextStyle(
@@ -27,7 +27,7 @@ class _TopicAndButtonState extends State<TopicAndButton> {
             fontSize: 36.sp,
           ),
         ),
-        SizedBox(width: 60.w,),
+        SizedBox(width: 40.w,),
         SizedBox(
           width: 54.w,
           height: 31.h,
