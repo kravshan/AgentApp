@@ -10,6 +10,7 @@ import 'package:insurance_app/pages/notification_1.dart';
 import 'package:insurance_app/pages/welcome.dart';
 import 'package:insurance_app/pages/review.dart';
 import 'package:insurance_app/pages/contact.dart';
+import 'package:insurance_app/pages/notification_2.dart';
 
 void main() {
   runApp(ScreenUtilInit(
@@ -27,6 +28,7 @@ void main() {
         '/welcome': (context) => Welcome_screen(),
         '/review': (context) => Review(),
         '/contact': (context) => Contact(),
+        '/notification_2': (context) => Notification_2(),
       },
     ),
   )

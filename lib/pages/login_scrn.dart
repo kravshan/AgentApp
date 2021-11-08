@@ -36,10 +36,12 @@ class _LoginScrnState extends State<LoginScrn> {
                 onPressed: (){
                   Navigator.pushNamedAndRemoveUntil(context, '/welcome', (route) => false);
                 },
-                child: const Text('LOGIN',
+                child: Text('LOGIN',
                   style: TextStyle(
                     fontFamily: 'Roboto',
-                    color: Colors.white
+                    color: Colors.white,
+                    fontWeight: FontWeight.w900,
+                    fontSize: 13.sp
                   ),
                 ),
                 color: const Color.fromARGB(255, 11, 126, 193),

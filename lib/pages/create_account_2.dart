@@ -42,7 +42,7 @@ class _CreateAccount2State extends State<CreateAccount2> {
                       fontFamily: 'Roboto',
                       color: Colors.white
                   ),),
-                color: Color.fromARGB(255, 11, 126, 193),
+                color: const Color.fromARGB(255, 11, 126, 193),
               ),
             )
 
