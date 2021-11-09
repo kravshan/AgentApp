@@ -41,13 +41,13 @@ class _ContactState extends State<Contact> {
           SizedBox(height: 41.sp),
           SizedBox(
             height: 50.h,
-            width: 155.w,
+            width: 160.w,
             child: contactNumber(number1, 1)
           ),
           SizedBox(height: 45.h),
-          SizedBox(height: 50.h, width: 155.w, child: contactNumber(number2, 2)),
+          SizedBox(height: 50.h, width: 160.w, child: contactNumber(number2, 2)),
           SizedBox(height: 45.h),
-          SizedBox(height: 50.h, width: 155.w, child: contactNumber(number3, 3)),
+          SizedBox(height: 50.h, width: 160.w, child: contactNumber(number3, 3)),
           SizedBox(height: 276.h),
           SizedBox(height: 50.h, width: 155.w ,child: back()),
         ],

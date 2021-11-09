@@ -96,7 +96,9 @@ class _Accept3State extends State<Accept3> {
               height: 50.h,
               width: 300.w,
               child: FlatButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.pushNamed(context, '/accept_4');
+                },
                 child: Text('NEXT',
                   style: TextStyle(
                       fontSize: 13.sp,
@@ -104,7 +106,7 @@ class _Accept3State extends State<Accept3> {
                       fontFamily: 'Roboto',
                       color: Colors.white
                   ),),
-                color: const Color.fromARGB(255, 11, 126, 193),
+                color: const Color.fromARGB(255, 160, 213, 244),
               ),
             ),
             SizedBox(height: 13.h,),
