@@ -15,6 +15,7 @@ import 'package:insurance_app/pages/map.dart';
 import 'package:insurance_app/pages/notification_3.dart';
 import 'package:insurance_app/pages/accept_4.dart';
 import 'package:insurance_app/pages/accept_5.dart';
+import 'package:insurance_app/pages/review_2.dart';
 
 void main() {
   runApp(ScreenUtilInit(
@@ -36,7 +37,8 @@ void main() {
         '/map': (context) => Map(),
         '/notification_3': (context) => Notification_3(),
         '/accept_4': (context) => Accept4(),
-        '/accept_5': (context) => Accept5()
+        '/accept_5': (context) => Accept5(),
+        '/review_2': (context) => Review_2()
       },
     ),
   )
