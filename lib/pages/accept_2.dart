@@ -52,6 +52,7 @@ class _Accept2State extends State<Accept2> {
                       fontWeight: FontWeight.w900
                     ),),
                     color: const Color.fromARGB(255, 11, 126, 193),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
                   ),
                 ),
                 SizedBox(
@@ -69,6 +70,7 @@ class _Accept2State extends State<Accept2> {
                           fontWeight: FontWeight.w900
                       ),),
                     color: const Color.fromARGB(255, 11, 126, 193),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
                   ),
                 ),
               ],
@@ -89,6 +91,7 @@ class _Accept2State extends State<Accept2> {
                       fontWeight: FontWeight.w900
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 11.h),
@@ -107,6 +110,7 @@ class _Accept2State extends State<Accept2> {
                       fontWeight: FontWeight.w900
                   ),),
                 color: const Color.fromARGB(255, 160, 213, 244),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 11.h),
@@ -125,6 +129,7 @@ class _Accept2State extends State<Accept2> {
                       fontWeight: FontWeight.w900
                   ),),
                 color: Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
           ],

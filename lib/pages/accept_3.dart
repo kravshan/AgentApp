@@ -44,6 +44,7 @@ class _Accept3State extends State<Accept3> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 13.h,),
@@ -68,6 +69,7 @@ class _Accept3State extends State<Accept3> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 15.sp,),
@@ -89,6 +91,7 @@ class _Accept3State extends State<Accept3> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 13.h,),
@@ -107,6 +110,7 @@ class _Accept3State extends State<Accept3> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 160, 213, 244),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 13.h,),
@@ -125,6 +129,7 @@ class _Accept3State extends State<Accept3> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             ),
             SizedBox(height: 13.h,),
@@ -141,6 +146,7 @@ class _Accept3State extends State<Accept3> {
                       color: Colors.white
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
               ),
             )
 

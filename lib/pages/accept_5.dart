@@ -117,6 +117,7 @@ class _Accept5State extends State<Accept5> {
                 },
                 child: Text('Review', style: TextStyle(fontWeight: FontWeight.w900, fontSize: 13.sp, fontFamily: 'Roboto', color: Colors.white),),
             color: const Color.fromARGB(255, 11, 126, 193),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),
             ),
           )
         ],
