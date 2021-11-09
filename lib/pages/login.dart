@@ -61,7 +61,7 @@ class _LoginState extends State<Login> {
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, '/create_account_1');
                   },
-                  child: Text('SIGN IN',
+                  child: Text('REGISTER',
                   style: TextStyle(
                     fontFamily: 'Roboto',
                     fontSize: 13.sp,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:insurance_app/services/topic_and_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Accept5 extends StatefulWidget {
