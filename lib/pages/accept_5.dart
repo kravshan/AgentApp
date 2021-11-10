@@ -9,6 +9,9 @@ class Accept5 extends StatefulWidget {
 }
 
 class _Accept5State extends State<Accept5> {
+
+  final num = 80.w;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,9 +60,10 @@ class _Accept5State extends State<Accept5> {
           Text('Case XXX Confirmed',style: TextStyle(fontFamily: 'Comfortaa', fontSize: 30.sp, fontWeight: FontWeight.w400),),
           SizedBox(height: 30.h,),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Reference Number     -',
+              SizedBox(width: num,),
+              Text('Reference Number             -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,
@@ -74,8 +78,9 @@ class _Accept5State extends State<Accept5> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(width: num,),
               Text('Cilent Contact Number     -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -91,8 +96,9 @@ class _Accept5State extends State<Accept5> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(width: num,),
               Text('Agent Contact Number     -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,

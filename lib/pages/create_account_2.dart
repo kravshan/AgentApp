@@ -36,11 +36,12 @@ class _CreateAccount2State extends State<CreateAccount2> {
                 onPressed: (){
                   Navigator.pushNamedAndRemoveUntil(context, '/welcome', (route) => false);
                 },
-                child: const Text('Next',
+                child: Text('Next',
                   style: TextStyle(
-                      fontSize: 13.0,
+                      fontSize: 13.sp,
                       fontFamily: 'Roboto',
-                      color: Colors.white
+                      color: Colors.white,
+                    fontWeight: FontWeight.w900
                   ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),

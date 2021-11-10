@@ -39,7 +39,8 @@ class _CreateAccount1State extends State<CreateAccount1> {
                 style: TextStyle(
                   fontSize: 13.sp,
                   fontFamily: 'Roboto',
-                  color: Colors.white
+                  color: Colors.white,
+                  fontWeight: FontWeight.w900
                 ),),
                 color: const Color.fromARGB(255, 11, 126, 193),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6.r)),

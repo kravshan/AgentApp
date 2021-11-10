@@ -4,13 +4,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:insurance_app/services/profile.dart';
 
 class Review_2 extends StatefulWidget {
-  const Review_2({Key? key}) : super(key: key);
 
   @override
   _Review_2State createState() => _Review_2State();
 }
 
 class _Review_2State extends State<Review_2> {
+
+  final num = 80.w;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,9 +30,10 @@ class _Review_2State extends State<Review_2> {
             ),),
           SizedBox(height: 20.h,),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Policy Number     -',
+              SizedBox(width: num,),
+              Text('Policy Number                  -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,
@@ -45,9 +48,10 @@ class _Review_2State extends State<Review_2> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Vehicle Number     -',
+              SizedBox(width: num,),
+              Text('Vehicle Number                -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,
@@ -62,9 +66,10 @@ class _Review_2State extends State<Review_2> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Chasis Number     -',
+              SizedBox(width: num,),
+              Text('Chasis Number                 -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,
@@ -79,9 +84,10 @@ class _Review_2State extends State<Review_2> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Mileage     -',
+              SizedBox(width: num,),
+              Text('Mileage                              -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,
@@ -96,9 +102,10 @@ class _Review_2State extends State<Review_2> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Driver Name     -',
+              SizedBox(width: num,),
+              Text('Driver Name                      -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,
@@ -113,8 +120,9 @@ class _Review_2State extends State<Review_2> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(width: num,),
               Text('Driver Licence Details     -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
@@ -130,9 +138,10 @@ class _Review_2State extends State<Review_2> {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Nature of Accident     -',
+              SizedBox(width: num,),
+              Text('Nature of Accident          -',
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18.sp,

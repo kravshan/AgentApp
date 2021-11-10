@@ -4,6 +4,7 @@ import 'package:insurance_app/services/topic_and_button.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:insurance_app/services/profile.dart';
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 
 class Notification_3 extends StatefulWidget {
   const Notification_3({Key? key}) : super(key: key);
@@ -13,6 +14,8 @@ class Notification_3 extends StatefulWidget {
 }
 
 class _Notification_3State extends State<Notification_3> {
+
+  final number = '+94772640972';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,7 +84,9 @@ class _Notification_3State extends State<Notification_3> {
             height: 50.h,
             width: 300.w,
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                FlutterPhoneDirectCaller.callNumber(number);
+              },
               child: Text('CONTACT CLIENT',
                 style: TextStyle(
                     fontFamily: 'Roboto',
@@ -98,7 +103,9 @@ class _Notification_3State extends State<Notification_3> {
             height: 50.h,
             width: 300.w,
             child: FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamedAndRemoveUntil(context, '/welcome', (route) => false);
+              },
               child: Text('DECLINE',
                 style: TextStyle(
                     fontFamily: 'Roboto',

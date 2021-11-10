@@ -81,7 +81,7 @@ class _Accept2State extends State<Accept2> {
               width: 300.w,
               child: FlatButton(
                 onPressed: (){
-
+                  Navigator.pushNamed(context, '/map');
                 },
                 child: Text('LOCATION',
                   style: TextStyle(
